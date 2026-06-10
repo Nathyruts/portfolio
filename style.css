@@ -112,31 +112,6 @@ html,body,#main{box-sizing:border-box;margin:0;padding:0}:root{-webkit-font-smoo
 /* --- Framer extracted styles --- */
 
 html body { background: var(--token-78700829-9deb-4139-a514-ce0eb43d703b, rgb(250, 250, 250)); }
-/* Fix estático: o runtime original do Framer não está presente neste export.
-   Elementos de "appear" ficam presos em opacity:0.001/translateY e parecem invisíveis. */
-[data-framer-appear-id],
-[style*="opacity:0.001"],
-[style*="opacity: 0.001"],
-[style*="opacity:0;"],
-[style*="opacity: 0;"] {
-  opacity: 1 !important;
-  visibility: visible !important;
-  transform: none !important;
-  will-change: auto !important;
-}
-
-[data-framer-appear-id] *,
-[style*="opacity:0.001"] *,
-[style*="opacity: 0.001"] *,
-[style*="opacity:0;"] *,
-[style*="opacity: 0;"] * {
-  visibility: visible !important;
-}
-
-.ssr-variant {
-  visibility: visible !important;
-}
-
 #__framer-badge-container {
   display: none !important;
 }
